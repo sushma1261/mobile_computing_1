@@ -13,8 +13,8 @@ struct FirstPageView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("This is page 1")
-                Button("Click to next page") {
+                Text("This is page 1!")
+                Button("Click to page 2") {
                     showDetails = true
                 }
             }

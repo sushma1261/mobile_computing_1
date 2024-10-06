@@ -13,9 +13,9 @@ struct SecondPageView: View {
     
     var body: some View {
         VStack {
-            Text("This is second Page!")
-            Text("You can click on back button in header to go back to first page").foregroundColor(.brown)
-            Button("You can click here also go back to first page") {
+            Text("This is Page 2!")
+            Text("You can click on back button in header to go back to page 1").foregroundColor(.brown)
+            Button("Click here to go back to page 1") {
                 showDetails = false
             }
         }
