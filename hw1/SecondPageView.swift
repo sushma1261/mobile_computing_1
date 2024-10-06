@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct SecondPageView: View {
+    
+    @Binding var showDetails: Bool
+    
     var body: some View {
         VStack {
-            Text("Hello this is a new screen!")
-            Text("Click on back in header to go to previous screen")
+            Text("This is second Page!")
+            Text("You can click on back button in header to go back to first page").foregroundColor(.brown)
+            Button("You can click here also go back to first page") {
+                showDetails = false
+            }
         }
         .padding(8)
     }
 }
 
 #Preview {
-    SecondPageView()
+    SecondPageView(showDetails: .constant(false))
 }

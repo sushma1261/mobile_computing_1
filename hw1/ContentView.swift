@@ -9,13 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            VStack {
-                NavigationLink("Click to go to next screen") {
-                    SecondPageView()
-                }
-            }
-        }
+        FirstPageView()
     }
 }
 
